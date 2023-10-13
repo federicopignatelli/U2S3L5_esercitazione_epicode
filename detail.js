@@ -1,6 +1,5 @@
 const address = new URLSearchParams(location.search)
 const productId = address.get('productId')
-//+ productIdId
 
 
 const deleteProduct = function () {
@@ -44,7 +43,7 @@ const generateProductDetails = function (detail) {
               <p>Prezzo: ${detail.price}€</p>
               <button class="btn btn-dark" onclick="deleteProduct()">Elimina</button>
               <button type="button" class="btn btn-secondary">
-              <a class="text-white" style="text-decoration: none;" href="./backoffice.html?eventId=${detail._id}">Modifica (non funz)</a>
+              <a class="text-white" style="text-decoration: none;" href="./backoffice.html?eventId=${detail._id}">Modifica</a>
               </button>
           </div>
       `// non sono riuscito a far funzionare il bottone modifica
